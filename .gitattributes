@@ -1,0 +1,5 @@
+
+*.md text
+*.py text linguist-language=Python
+*.sh text linguist-language=Shell
+*.html text linguist-language=HTML
