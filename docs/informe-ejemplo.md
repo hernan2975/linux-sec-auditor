@@ -55,6 +55,16 @@ apt list --upgradable
 
 ✅ Recomendaciones Técnicas Automatizadas
 
+## ✅ Recomendaciones Técnicas Automatizadas
+
+| Hallazgo              | Acción Sugerida                                                                 |
+|----------------------|----------------------------------------------------------------------------------|
+| Usuarios Privilegiados | Verificar pertenencia al grupo `sudo` y restringir accesos innecesarios        |
+| Puertos Abiertos       | Configurar `ufw`, habilitar `fail2ban`, limitar accesos desde IPs específicas  |
+| Actualizaciones        | Ejecutar `apt update && apt upgrade`, activar actualizaciones automáticas      |
+| Contraseñas Débiles    | Aplicar políticas de complejidad con `pam_pwquality`, usar hashing SHA512 en `/etc/shadow` |
+
+
 📤 Exportación del Informe
 Este informe se puede convertir a HTML con markdown2, Jinja2, o integrar en dashboards visuales.
 
