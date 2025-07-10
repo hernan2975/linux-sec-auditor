@@ -1,0 +1,19 @@
+
+# 🌐 Parámetros generales
+fecha_auditoria: "2025-07-10"
+servidor: "servidor-local"
+so: "Ubuntu 22.04 LTS"
+modo: "local"  # Opciones: local | docker
+
+# 🔍 Targets de auditoría
+escaneo_ip: "127.0.0.1"
+usuarios_auditar: ["root", "admin", "legacy"]
+puertos_objetivo: "full"  # Opciones: "common" | "full"
+
+# 📦 Comportamiento del informe
+formato_salida: "markdown"
+ruta_salida: "outputs/informe-auditoria.md"
+
+# 🚫 Seguridad
+habilitar_password_check: true
+habilitar_nmap: true
