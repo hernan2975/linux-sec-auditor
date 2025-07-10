@@ -1,26 +1,36 @@
 📁 Estructura Inicial del Repositorio
 
 linux-sec-auditor/
-├── .gitignore
-├── .gitattributes
-├── LICENSE
-├── README.md
-├── docs/
-│   └── informe-ejemplo.md
-├── src/
-│   ├── audit/
-│   │   ├── users.py
-│   │   ├── ports.py
-│   │   ├── updates.py
-│   ├── utils/
-│   │   └── helpers.py
-│   └── main.py
-├── scripts/
-│   ├── run_audit.sh
-│   └── docker_entrypoint.sh
-├── outputs/
-│   └── ejemplo.html
-├── config/
-│   └── settings.yaml
-└── docker/
-    └── Dockerfile
+├── .gitignore                   # Ignorar archivos temporales, logs, binarios
+├── .gitattributes               # Metadata para GitHub (lenguaje, tipo de archivo)
+├── LICENSE                      # Licencia MIT abierta
+├── README.md                    # Documentación principal bilingüe
+│
+├── config/                      # Configuración flexible del auditor
+│   └── settings.yaml            # Parámetros personalizables (IPs, modo, fecha, etc.)
+│
+├── docs/                        # Documentación técnica y de extensión
+│   ├── informe-ejemplo.md       # Plantilla base del informe en Markdown
+│   └── guía-extensión.md        # Recomendaciones para escalar el proyecto
+│
+├── outputs/                     # Informes generados por auditoría
+│   └── ejemplo.html             # Ejemplo en formato HTML exportado del Markdown
+│
+├── scripts/                     # Scripts operativos y de entrada
+│   ├── run_audit.sh             # Ejecución del auditor desde terminal local
+│   └── docker_entrypoint.sh     # Script usado como entrypoint en contenedor Docker
+│
+├── src/                         # Lógica principal del proyecto
+│   ├── main.py                  # Coordinador del flujo de auditoría
+│   ├── audit/                   # Módulos especializados por categoría
+│   │   ├── users.py             # Detecta usuarios privilegiados
+│   │   ├── ports.py             # Escanea puertos abiertos con nmap
+│   │   ├── updates.py           # Verifica actualizaciones críticas pendientes
+│   ├── utils/                   # Utilidades comunes
+│   │   └── helpers.py           # Genera el informe en Markdown
+│
+├── docker/                      # Archivos relacionados con contenedores
+│   └── Dockerfile               # Imagen que ejecuta el auditor en contenedor
+│
+└── requirements.txt             # (Opcional) Librerías Python externas para informes HTML
+
