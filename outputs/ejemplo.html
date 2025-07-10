@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Informe de Auditoría – linux-sec-auditor</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    h1, h2 { color: #2c3e50; }
+    table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+    th, td { padding: 10px; border: 1px solid #ccc; }
+    th { background-color: #f9f9f9; text-align: left; }
+  </style>
+</head>
+<body>
+  <h1>🛡️ Informe de Auditoría de Seguridad – Linux</h1>
+  <p><strong>Fecha:</strong> 2025-07-10</p>
+  <p><strong>Host:</strong> servidor-local</p>
+  <hr>
+
+  <h2>📍 Hallazgos Detectados</h2>
+  <ul>
+    <li><strong>Usuario:</strong> admin — <em>Riesgo Alto</em><br>Usuario con privilegios sudo sin MFA configurado.</li>
+    <li><strong>Puerto:</strong> 22/tcp — <em>Riesgo Medio</em><br>Servicio SSH abierto sin restricción IP.</li>
+    <li><strong>Paquete:</strong> openssl — <em>Riesgo Alto</em><br>Actualización de seguridad pendiente.</li>
+  </ul>
+
+  <h2>✅ Recomendaciones</h2>
+  <table>
+    <tr><th>Hallazgo</th><th>Recomendación</th></tr>
+    <tr><td>Usuarios Privilegiados</td><td>Revisar grupo sudo y aplicar MFA</td></tr>
+    <tr><td>Puertos Abiertos</td><td>Configurar `ufw` y limitar IPs externas</td></tr>
+    <tr><td>Actualizaciones</td><td>Ejecutar `apt update && upgrade`, activar automáticas</td></tr>
+  </table>
+</body>
+</html>
