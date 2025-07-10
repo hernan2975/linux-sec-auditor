@@ -1,0 +1,14 @@
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+*.sqlite
+
+# Bash
+*.log
+
+# Output files
+outputs/
