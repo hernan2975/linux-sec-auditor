@@ -2,7 +2,7 @@
 
 Auditoría automatizada de seguridad para servidores Linux utilizando Python y Bash.
 
-## 🇪🇸 Características
+## Características
 
 - Revisión de usuarios con permisos elevados
 - Escaneo de puertos con Nmap
@@ -11,7 +11,7 @@ Auditoría automatizada de seguridad para servidores Linux utilizando Python y B
 - Recomendaciones técnicas automatizadas
 - Soporte multientorno con Docker
 
-## 🇬🇧 Features
+## Features
 
 - Privileged user auditing
 - Port scanning via Nmap
